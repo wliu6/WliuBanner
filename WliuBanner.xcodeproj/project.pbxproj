@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA06DB31B4580F700A3F975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB21B4580F700A3F975 /* main.m */; };
+		0FA06DB61B4580F700A3F975 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB51B4580F700A3F975 /* AppDelegate.m */; };
+		0FA06DB91B4580F700A3F975 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB81B4580F700A3F975 /* ViewController.m */; };
+		0FA06DBC1B4580F700A3F975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA06DBA1B4580F700A3F975 /* Main.storyboard */; };
+		0FA06DC11B4580F700A3F975 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA06DBF1B4580F700A3F975 /* LaunchScreen.xib */; };
+		0FA06DCD1B4580F700A3F975 /* WliuBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DCC1B4580F700A3F975 /* WliuBannerTests.m */; };
+		0FA06DD91B45815800A3F975 /* WliuBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DD81B45815800A3F975 /* WliuBannerView.m */; };
+		0FA06DDC1B4581EC00A3F975 /* WliuBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */; };
+		0FA06DF01B4A704400A3F975 /* WliuBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DEF1B4A704400A3F975 /* WliuBanner.m */; };
+		0FA06DF31B4A785900A3F975 /* WliuBannerImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */; };
+		0FA06E2B1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */; };
+		0FE6F2771B7A321800FFD054 /* WliuBannerResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA06DC71B4580F700A3F975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FA06DA51B4580F700A3F975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FA06DAC1B4580F700A3F975;
+			remoteInfo = WliuBanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F808B031B575F66006DD1A8 /* WliuBannerMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WliuBannerMacroHeader.h; sourceTree = "<group>"; };
+		0FA06DAD1B4580F700A3F975 /* WliuBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WliuBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA06DB11B4580F700A3F975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA06DB21B4580F700A3F975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FA06DB41B4580F700A3F975 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FA06DB51B4580F700A3F975 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FA06DB71B4580F700A3F975 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FA06DB81B4580F700A3F975 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FA06DBB1B4580F700A3F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FA06DC01B4580F700A3F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0FA06DC61B4580F700A3F975 /* WliuBannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WliuBannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA06DCB1B4580F700A3F975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA06DCC1B4580F700A3F975 /* WliuBannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WliuBannerTests.m; sourceTree = "<group>"; };
+		0FA06DD71B45815800A3F975 /* WliuBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerView.h; sourceTree = "<group>"; };
+		0FA06DD81B45815800A3F975 /* WliuBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerView.m; sourceTree = "<group>"; };
+		0FA06DDA1B4581EC00A3F975 /* WliuBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerScrollView.h; sourceTree = "<group>"; };
+		0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerScrollView.m; sourceTree = "<group>"; };
+		0FA06DEE1B4A704400A3F975 /* WliuBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBanner.h; sourceTree = "<group>"; };
+		0FA06DEF1B4A704400A3F975 /* WliuBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBanner.m; sourceTree = "<group>"; };
+		0FA06DF11B4A785900A3F975 /* WliuBannerImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerImageCache.h; sourceTree = "<group>"; };
+		0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerImageCache.m; sourceTree = "<group>"; };
+		0FA06E291B4E2D5200A3F975 /* UIImageView+WliuImageLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WliuImageLoad.h"; sourceTree = "<group>"; };
+		0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WliuImageLoad.m"; sourceTree = "<group>"; };
+		0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WliuBannerResource.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA06DAA1B4580F700A3F975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA06DC31B4580F700A3F975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA06DA41B4580F700A3F975 = {
+			isa = PBXGroup;
+			children = (
+				0FA06DAF1B4580F700A3F975 /* WliuBanner */,
+				0FA06DC91B4580F700A3F975 /* WliuBannerTests */,
+				0FA06DAE1B4580F700A3F975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FA06DAE1B4580F700A3F975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FA06DAD1B4580F700A3F975 /* WliuBanner.app */,
+				0FA06DC61B4580F700A3F975 /* WliuBannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FA06DAF1B4580F700A3F975 /* WliuBanner */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */,
+				0FA06DB41B4580F700A3F975 /* AppDelegate.h */,
+				0FA06DB51B4580F700A3F975 /* AppDelegate.m */,
+				0FA06DB71B4580F700A3F975 /* ViewController.h */,
+				0FA06DB81B4580F700A3F975 /* ViewController.m */,
+				0FA06DEE1B4A704400A3F975 /* WliuBanner.h */,
+				0FA06DEF1B4A704400A3F975 /* WliuBanner.m */,
+				0FA06DD61B45813E00A3F975 /* WliuBanner */,
+				0FA06DBA1B4580F700A3F975 /* Main.storyboard */,
+				0FA06DBF1B4580F700A3F975 /* LaunchScreen.xib */,
+				0FA06DB01B4580F700A3F975 /* Supporting Files */,
+			);
+			path = WliuBanner;
+			sourceTree = "<group>";
+		};
+		0FA06DB01B4580F700A3F975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA06DB11B4580F700A3F975 /* Info.plist */,
+				0FA06DB21B4580F700A3F975 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA06DC91B4580F700A3F975 /* WliuBannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FA06DCC1B4580F700A3F975 /* WliuBannerTests.m */,
+				0FA06DCA1B4580F700A3F975 /* Supporting Files */,
+			);
+			path = WliuBannerTests;
+			sourceTree = "<group>";
+		};
+		0FA06DCA1B4580F700A3F975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA06DCB1B4580F700A3F975 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA06DD61B45813E00A3F975 /* WliuBanner */ = {
+			isa = PBXGroup;
+			children = (
+				0F808B031B575F66006DD1A8 /* WliuBannerMacroHeader.h */,
+				0FA06DD71B45815800A3F975 /* WliuBannerView.h */,
+				0FA06DD81B45815800A3F975 /* WliuBannerView.m */,
+				0FA06DDA1B4581EC00A3F975 /* WliuBannerScrollView.h */,
+				0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */,
+				0FA06DF11B4A785900A3F975 /* WliuBannerImageCache.h */,
+				0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */,
+				0FA06E291B4E2D5200A3F975 /* UIImageView+WliuImageLoad.h */,
+				0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */,
+			);
+			path = WliuBanner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FA06DAC1B4580F700A3F975 /* WliuBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA06DD01B4580F700A3F975 /* Build configuration list for PBXNativeTarget "WliuBanner" */;
+			buildPhases = (
+				0FA06DA91B4580F700A3F975 /* Sources */,
+				0FA06DAA1B4580F700A3F975 /* Frameworks */,
+				0FA06DAB1B4580F700A3F975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WliuBanner;
+			productName = WliuBanner;
+			productReference = 0FA06DAD1B4580F700A3F975 /* WliuBanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FA06DC51B4580F700A3F975 /* WliuBannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA06DD31B4580F700A3F975 /* Build configuration list for PBXNativeTarget "WliuBannerTests" */;
+			buildPhases = (
+				0FA06DC21B4580F700A3F975 /* Sources */,
+				0FA06DC31B4580F700A3F975 /* Frameworks */,
+				0FA06DC41B4580F700A3F975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FA06DC81B4580F700A3F975 /* PBXTargetDependency */,
+			);
+			name = WliuBannerTests;
+			productName = WliuBannerTests;
+			productReference = 0FA06DC61B4580F700A3F975 /* WliuBannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FA06DA51B4580F700A3F975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Wliu;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = w66;
+				TargetAttributes = {
+					0FA06DAC1B4580F700A3F975 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					0FA06DC51B4580F700A3F975 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 0FA06DAC1B4580F700A3F975;
+					};
+				};
+			};
+			buildConfigurationList = 0FA06DA81B4580F700A3F975 /* Build configuration list for PBXProject "WliuBanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FA06DA41B4580F700A3F975;
+			productRefGroup = 0FA06DAE1B4580F700A3F975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FA06DAC1B4580F700A3F975 /* WliuBanner */,
+				0FA06DC51B4580F700A3F975 /* WliuBannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FA06DAB1B4580F700A3F975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE6F2771B7A321800FFD054 /* WliuBannerResource.xcassets in Resources */,
+				0FA06DBC1B4580F700A3F975 /* Main.storyboard in Resources */,
+				0FA06DC11B4580F700A3F975 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA06DC41B4580F700A3F975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FA06DA91B4580F700A3F975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA06DF01B4A704400A3F975 /* WliuBanner.m in Sources */,
+				0FA06E2B1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m in Sources */,
+				0FA06DB91B4580F700A3F975 /* ViewController.m in Sources */,
+				0FA06DDC1B4581EC00A3F975 /* WliuBannerScrollView.m in Sources */,
+				0FA06DD91B45815800A3F975 /* WliuBannerView.m in Sources */,
+				0FA06DF31B4A785900A3F975 /* WliuBannerImageCache.m in Sources */,
+				0FA06DB61B4580F700A3F975 /* AppDelegate.m in Sources */,
+				0FA06DB31B4580F700A3F975 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA06DC21B4580F700A3F975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA06DCD1B4580F700A3F975 /* WliuBannerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FA06DC81B4580F700A3F975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FA06DAC1B4580F700A3F975 /* WliuBanner */;
+			targetProxy = 0FA06DC71B4580F700A3F975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FA06DBA1B4580F700A3F975 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FA06DBB1B4580F700A3F975 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FA06DBF1B4580F700A3F975 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FA06DC01B4580F700A3F975 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FA06DCE1B4580F700A3F975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FA06DCF1B4580F700A3F975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FA06DD11B4580F700A3F975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WliuBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0FA06DD21B4580F700A3F975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WliuBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FA06DD41B4580F700A3F975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WliuBannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WliuBanner.app/WliuBanner";
+			};
+			name = Debug;
+		};
+		0FA06DD51B4580F700A3F975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WliuBannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WliuBanner.app/WliuBanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FA06DA81B4580F700A3F975 /* Build configuration list for PBXProject "WliuBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA06DCE1B4580F700A3F975 /* Debug */,
+				0FA06DCF1B4580F700A3F975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA06DD01B4580F700A3F975 /* Build configuration list for PBXNativeTarget "WliuBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA06DD11B4580F700A3F975 /* Debug */,
+				0FA06DD21B4580F700A3F975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA06DD31B4580F700A3F975 /* Build configuration list for PBXNativeTarget "WliuBannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA06DD41B4580F700A3F975 /* Debug */,
+				0FA06DD51B4580F700A3F975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FA06DA51B4580F700A3F975 /* Project object */;
+}
