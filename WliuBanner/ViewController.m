@@ -11,9 +11,7 @@
 
 #import "ViewController.h"
 #import "WliuBannerView.h"
-
 #import "WliuBanner.h"
-#import <objc/runtime.h>
 @interface ViewController () <WliuBannerDelegate>
 
 @end
@@ -31,11 +29,10 @@
     WliuBanner *ban4 = [[WliuBanner alloc] initWithBannerDic:@{@"image" : @"http://ww2.sinaimg.cn/mw600/6b5b4c75tw1e3g1a3q4uyj.jpg"}];
     
     WliuBanner *ban5 = [[WliuBanner alloc] initWithBannerDic:@{@"image" : @"http://c.hiphotos.baidu.com/zhidao/pic/item/b999a9014c086e063fd0f10900087bf40ad1cb7c.jpg"}];
-    
+//    @{}];//
     WliuBanner *ban6 = [[WliuBanner alloc] initWithBannerDic:@{@"image" : @"http://ftol.1377.com/uploads/allimg/130923/2-130923102940B8.jpg"}];
     
-    WliuBannerView *bannerView = [[WliuBannerView alloc] initWithFrame:CGRectMake(0, 120, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width / 3)allBannerObjsArray:@[ban1, ban2, ban3, ban4, ban5, ban6] bannerClass:[WliuBanner class]  bannerImagePropertyName:@"bannerImageURLString" placeholderImages:@[[UIImage imageNamed:@"WliuAutoPlaceholder-1"], [UIImage imageNamed:@"WliuAutoPlaceholder-2"]] animationDuration:0.3f];
-    
+    WliuBannerView *bannerView = [[WliuBannerView alloc] initWithFrame:CGRectMake(0, 120, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.width / 3) allBannerObjsArray:@[ban1, ban2, ban3, ban4, ban5, ban6] bannerClass:[WliuBanner class] bannerImagePropertyName:@"bannerImageURLString" placeholderImages:nil animationDuration:3];
     bannerView.delegate = self;
 //    bannerView.bannerPageIndicatorTintColor = [UIColor greenColor];
 //    bannerView.bannerCurrentPageIndicatorTintColor = [UIColor redColor];

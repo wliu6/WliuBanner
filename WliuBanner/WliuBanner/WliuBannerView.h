@@ -27,7 +27,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import "WliuBanner.h"
 
 @protocol WliuBannerDelegate <NSObject>
 

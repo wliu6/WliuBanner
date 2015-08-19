@@ -11,23 +11,6 @@
 #import "WliuBannerMacroHeader.h"
 
 #pragma mark - Auxiliary Class
-//@interface WliuOperationQueue : NSOperationQueue
-//
-//@end
-//@implementation WliuOperationQueue
-//
-//+ (instancetype)sharedOperationQueue
-//{
-//    static WliuOperationQueue *opQueue;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        opQueue = [[WliuOperationQueue alloc] init];
-//        opQueue.name = @"loadingBannerImage";
-//    });
-//    return opQueue;
-//}
-//
-//@end
 #pragma mark - motheds
 @implementation UIImageView (WliuImageLoad)
 #pragma mark - private mothed
@@ -45,7 +28,7 @@
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     
     NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
-    
+
     if (wself) {
         NSString *imageStoreKey = [url absoluteString];
         UIImage *cacheImage = [[WliuBannerImageCache sharedImageCache] imageFromDiskWithKey:imageStoreKey];

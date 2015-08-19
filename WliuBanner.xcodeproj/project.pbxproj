@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		0FA06DB31B4580F700A3F975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB21B4580F700A3F975 /* main.m */; };
 		0FA06DB61B4580F700A3F975 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB51B4580F700A3F975 /* AppDelegate.m */; };
-		0FA06DB91B4580F700A3F975 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DB81B4580F700A3F975 /* ViewController.m */; };
 		0FA06DBC1B4580F700A3F975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA06DBA1B4580F700A3F975 /* Main.storyboard */; };
 		0FA06DC11B4580F700A3F975 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA06DBF1B4580F700A3F975 /* LaunchScreen.xib */; };
 		0FA06DCD1B4580F700A3F975 /* WliuBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DCC1B4580F700A3F975 /* WliuBannerTests.m */; };
-		0FA06DD91B45815800A3F975 /* WliuBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DD81B45815800A3F975 /* WliuBannerView.m */; };
-		0FA06DDC1B4581EC00A3F975 /* WliuBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */; };
-		0FA06DF01B4A704400A3F975 /* WliuBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DEF1B4A704400A3F975 /* WliuBanner.m */; };
-		0FA06DF31B4A785900A3F975 /* WliuBannerImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */; };
-		0FA06E2B1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */; };
 		0FE6F2771B7A321800FFD054 /* WliuBannerResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */; };
+		639BCE0E1B84F223006020C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE0B1B84F223006020C5 /* ViewController.m */; };
+		639BCE0F1B84F223006020C5 /* WliuBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE0D1B84F223006020C5 /* WliuBanner.m */; };
+		639BCE1A1B84F22E006020C5 /* UIImageView+WliuImageLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE121B84F22E006020C5 /* UIImageView+WliuImageLoad.m */; };
+		639BCE1B1B84F22E006020C5 /* WliuBannerImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE141B84F22E006020C5 /* WliuBannerImageCache.m */; };
+		639BCE1C1B84F22E006020C5 /* WliuBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE171B84F22E006020C5 /* WliuBannerScrollView.m */; };
+		639BCE1D1B84F22E006020C5 /* WliuBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639BCE191B84F22E006020C5 /* WliuBannerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,30 +32,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F808B031B575F66006DD1A8 /* WliuBannerMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WliuBannerMacroHeader.h; sourceTree = "<group>"; };
 		0FA06DAD1B4580F700A3F975 /* WliuBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WliuBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA06DB11B4580F700A3F975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA06DB21B4580F700A3F975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FA06DB41B4580F700A3F975 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FA06DB51B4580F700A3F975 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0FA06DB71B4580F700A3F975 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FA06DB81B4580F700A3F975 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0FA06DBB1B4580F700A3F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FA06DC01B4580F700A3F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0FA06DC61B4580F700A3F975 /* WliuBannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WliuBannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA06DCB1B4580F700A3F975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA06DCC1B4580F700A3F975 /* WliuBannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WliuBannerTests.m; sourceTree = "<group>"; };
-		0FA06DD71B45815800A3F975 /* WliuBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerView.h; sourceTree = "<group>"; };
-		0FA06DD81B45815800A3F975 /* WliuBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerView.m; sourceTree = "<group>"; };
-		0FA06DDA1B4581EC00A3F975 /* WliuBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerScrollView.h; sourceTree = "<group>"; };
-		0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerScrollView.m; sourceTree = "<group>"; };
-		0FA06DEE1B4A704400A3F975 /* WliuBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBanner.h; sourceTree = "<group>"; };
-		0FA06DEF1B4A704400A3F975 /* WliuBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBanner.m; sourceTree = "<group>"; };
-		0FA06DF11B4A785900A3F975 /* WliuBannerImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerImageCache.h; sourceTree = "<group>"; };
-		0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerImageCache.m; sourceTree = "<group>"; };
-		0FA06E291B4E2D5200A3F975 /* UIImageView+WliuImageLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WliuImageLoad.h"; sourceTree = "<group>"; };
-		0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WliuImageLoad.m"; sourceTree = "<group>"; };
 		0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WliuBannerResource.xcassets; sourceTree = "<group>"; };
+		639BCE0A1B84F223006020C5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		639BCE0B1B84F223006020C5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		639BCE0C1B84F223006020C5 /* WliuBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBanner.h; sourceTree = "<group>"; };
+		639BCE0D1B84F223006020C5 /* WliuBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBanner.m; sourceTree = "<group>"; };
+		639BCE111B84F22E006020C5 /* UIImageView+WliuImageLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WliuImageLoad.h"; sourceTree = "<group>"; };
+		639BCE121B84F22E006020C5 /* UIImageView+WliuImageLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WliuImageLoad.m"; sourceTree = "<group>"; };
+		639BCE131B84F22E006020C5 /* WliuBannerImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerImageCache.h; sourceTree = "<group>"; };
+		639BCE141B84F22E006020C5 /* WliuBannerImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerImageCache.m; sourceTree = "<group>"; };
+		639BCE151B84F22E006020C5 /* WliuBannerMacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerMacroHeader.h; sourceTree = "<group>"; };
+		639BCE161B84F22E006020C5 /* WliuBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerScrollView.h; sourceTree = "<group>"; };
+		639BCE171B84F22E006020C5 /* WliuBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerScrollView.m; sourceTree = "<group>"; };
+		639BCE181B84F22E006020C5 /* WliuBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WliuBannerView.h; sourceTree = "<group>"; };
+		639BCE191B84F22E006020C5 /* WliuBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WliuBannerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +100,11 @@
 				0FE6F2761B7A321800FFD054 /* WliuBannerResource.xcassets */,
 				0FA06DB41B4580F700A3F975 /* AppDelegate.h */,
 				0FA06DB51B4580F700A3F975 /* AppDelegate.m */,
-				0FA06DB71B4580F700A3F975 /* ViewController.h */,
-				0FA06DB81B4580F700A3F975 /* ViewController.m */,
-				0FA06DEE1B4A704400A3F975 /* WliuBanner.h */,
-				0FA06DEF1B4A704400A3F975 /* WliuBanner.m */,
-				0FA06DD61B45813E00A3F975 /* WliuBanner */,
+				639BCE0A1B84F223006020C5 /* ViewController.h */,
+				639BCE0B1B84F223006020C5 /* ViewController.m */,
+				639BCE0C1B84F223006020C5 /* WliuBanner.h */,
+				639BCE0D1B84F223006020C5 /* WliuBanner.m */,
+				639BCE101B84F22E006020C5 /* WliuBanner */,
 				0FA06DBA1B4580F700A3F975 /* Main.storyboard */,
 				0FA06DBF1B4580F700A3F975 /* LaunchScreen.xib */,
 				0FA06DB01B4580F700A3F975 /* Supporting Files */,
@@ -138,18 +138,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0FA06DD61B45813E00A3F975 /* WliuBanner */ = {
+		639BCE101B84F22E006020C5 /* WliuBanner */ = {
 			isa = PBXGroup;
 			children = (
-				0F808B031B575F66006DD1A8 /* WliuBannerMacroHeader.h */,
-				0FA06DD71B45815800A3F975 /* WliuBannerView.h */,
-				0FA06DD81B45815800A3F975 /* WliuBannerView.m */,
-				0FA06DDA1B4581EC00A3F975 /* WliuBannerScrollView.h */,
-				0FA06DDB1B4581EC00A3F975 /* WliuBannerScrollView.m */,
-				0FA06DF11B4A785900A3F975 /* WliuBannerImageCache.h */,
-				0FA06DF21B4A785900A3F975 /* WliuBannerImageCache.m */,
-				0FA06E291B4E2D5200A3F975 /* UIImageView+WliuImageLoad.h */,
-				0FA06E2A1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m */,
+				639BCE151B84F22E006020C5 /* WliuBannerMacroHeader.h */,
+				639BCE181B84F22E006020C5 /* WliuBannerView.h */,
+				639BCE191B84F22E006020C5 /* WliuBannerView.m */,
+				639BCE161B84F22E006020C5 /* WliuBannerScrollView.h */,
+				639BCE171B84F22E006020C5 /* WliuBannerScrollView.m */,
+				639BCE111B84F22E006020C5 /* UIImageView+WliuImageLoad.h */,
+				639BCE121B84F22E006020C5 /* UIImageView+WliuImageLoad.m */,
+				639BCE131B84F22E006020C5 /* WliuBannerImageCache.h */,
+				639BCE141B84F22E006020C5 /* WliuBannerImageCache.m */,
 			);
 			path = WliuBanner;
 			sourceTree = "<group>";
@@ -255,14 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA06DF01B4A704400A3F975 /* WliuBanner.m in Sources */,
-				0FA06E2B1B4E2D5200A3F975 /* UIImageView+WliuImageLoad.m in Sources */,
-				0FA06DB91B4580F700A3F975 /* ViewController.m in Sources */,
-				0FA06DDC1B4581EC00A3F975 /* WliuBannerScrollView.m in Sources */,
-				0FA06DD91B45815800A3F975 /* WliuBannerView.m in Sources */,
-				0FA06DF31B4A785900A3F975 /* WliuBannerImageCache.m in Sources */,
+				639BCE0E1B84F223006020C5 /* ViewController.m in Sources */,
+				639BCE1B1B84F22E006020C5 /* WliuBannerImageCache.m in Sources */,
 				0FA06DB61B4580F700A3F975 /* AppDelegate.m in Sources */,
+				639BCE0F1B84F223006020C5 /* WliuBanner.m in Sources */,
 				0FA06DB31B4580F700A3F975 /* main.m in Sources */,
+				639BCE1D1B84F22E006020C5 /* WliuBannerView.m in Sources */,
+				639BCE1A1B84F22E006020C5 /* UIImageView+WliuImageLoad.m in Sources */,
+				639BCE1C1B84F22E006020C5 /* WliuBannerScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

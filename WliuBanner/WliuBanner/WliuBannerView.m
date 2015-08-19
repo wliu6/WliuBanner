@@ -12,6 +12,8 @@
 #import "UIImageView+WliuImageLoad.h"
 #import <objc/runtime.h>
 
+//#define WliuDevloping
+
 const CGFloat W66_ScrollMarginErrorSpace = 0.6f;
 
 #pragma mark -- banner's page control place
@@ -41,6 +43,8 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
     NSUInteger _currentBannerObjIndex;
     
     NSTimer *_bannerTimer;
+    
+    CGFloat _pageWidth;
     
     BOOL _scrollDelegateSafe;
     
@@ -75,7 +79,9 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
 {
     self = [super initWithFrame:frame];
     if (self) {
+#ifdef WliuDevloping
         NSParameterAssert(NO);// Please use the provided factory initialization
+#endif
         [self basicConfigure:frame allBannerObjsArray:nil];
     }
     return self;
@@ -97,6 +103,7 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
 {
     return [self initWithFrame:frame allBannerObjsArray:allBannerObjsArray bannerClass:bannerClass bannerImagePropertyName:bannerImagePropertyName placeholderImages:placeholders animationDuration:W66_BannerPlaceholderAnimationDuration_Default];
 }
+
 - (instancetype)initWithFrame:(CGRect)frame allBannerObjsArray:(NSArray *)allBannerObjsArray bannerClass:(Class)bannerClass bannerImagePropertyName:(NSString *)bannerImagePropertyName placeholderImages:(NSArray *)placeholders animationDuration:(double)animationDuration
 {
     self = [super initWithFrame:frame];
@@ -114,7 +121,9 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
 {
     _bannerImagePropertyName = bannerImagePropertyName;
     _bannerClass = bannerClass;
+#ifdef WliuDevloping
     NSParameterAssert([self bannerObjHasBannerProperty]);// bannerClass hasn't bannerProperty
+#endif
 }
 #pragma mark -- banner objs arrays configure
 - (void)basicConfigure:(CGRect)frame allBannerObjsArray:(NSArray *)allBannerObjsArray
@@ -125,6 +134,8 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
     
     _pageIndicatorTintColor = W66_PageControlDefaultPageIndicatorTintColor;
     _currentPageIndicatorTintColor = W66_PageControlDefaultCurrentPageIndicatorTintColor;
+    
+    _pageWidth = frame.size.width;
     
     [self initBannerScrollViewWithFrame:frame];
     
@@ -188,14 +199,14 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
     if (!_scrollDelegateSafe) {
         [UIView animateWithDuration:_bannerAnimationDuration animations:^{
             _scrollDelegateSafe = NO;
-            _bannerScrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width * 2, 0);
+            _bannerScrollView.contentOffset = CGPointMake(_pageWidth * 2, 0);
         }completion:^(BOOL finished) {
             _currentBannerObjIndex ++;
             if (_currentBannerObjIndex >= self.allBannerObjsArray.count) {
                 _currentBannerObjIndex = 0;
             }
             [self reloadBannerScrollView];
-            _bannerScrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
+            _bannerScrollView.contentOffset = CGPointMake(_pageWidth, 0);
         }];
     }
 }
@@ -309,7 +320,9 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
     }
     
     if (!targetURL) {
+#ifdef WliuDevloping
         NSParameterAssert(NO);// the banner obj's property isn't a 'NSString' or 'NSURL' class
+#endif
     }
     UIImageView *imageViewTemp = [[UIImageView alloc]init];
     [imageViewTemp w6_setImageWithURL:targetURL placeholderImage:placeholderImage completion:^(BOOL completion, UIImage *image) {
@@ -370,8 +383,11 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
 #pragma mark - W66_BannerTimerDelegate
 - (void)BannerIsClicked
 {
+#warning The banner's clicked method is invalid when the number of array that member is banner's Obj is equal 0
+    if (!self.allBannerObjsArray || !self.allBannerObjsArray.count) return;
     id banner = self.allBannerObjsArray[_currentBannerObjIndex];
     if (self.delegate && [self.delegate respondsToSelector:@selector(clickWithBannerObj:)]) {
+
         [self.delegate clickWithBannerObj:banner];
     }
     if (_scrollDelegateSafe) {
@@ -394,16 +410,16 @@ const CGFloat W66_BannerPlaceholderAnimationDuration_Default = 0.2f;
                 _currentBannerObjIndex = self.allBannerObjsArray.count - 1;
             }
             [self reloadBannerScrollView];
-            _bannerScrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
+            _bannerScrollView.contentOffset = CGPointMake(_pageWidth, 0);
         }
-        if (scrollView.contentOffset.x >= [UIScreen mainScreen].bounds.size.width * 2 - W66_ScrollMarginErrorSpace)
+        if (scrollView.contentOffset.x >= _pageWidth * 2 - W66_ScrollMarginErrorSpace)
         {
             _currentBannerObjIndex ++;
             if (_currentBannerObjIndex >= self.allBannerObjsArray.count) {
                 _currentBannerObjIndex = 0;
             }
             [self reloadBannerScrollView];
-            _bannerScrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
+            _bannerScrollView.contentOffset = CGPointMake(_pageWidth, 0);
         }
     }
 }
