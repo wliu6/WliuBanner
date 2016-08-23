@@ -19,7 +19,8 @@
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //http://www.baidu/com?name=name&age=age
+    //http://www.baidu/com?jsonstr={name:name,age=age}
     WliuBanner *ban1 = [[WliuBanner alloc] initWithBannerDic:@{@"image" : @"http://img4.duitang.com/uploads/blog/201404/07/20140407121119_5MLJk.jpeg"}];
     
     WliuBanner *ban2 = [[WliuBanner alloc] initWithBannerDic:@{@"image" : @"http://data.bbs.manmankan.com/album/201205/22/195107xithxy8mfyx9xuyu.jpg"}];
